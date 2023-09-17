@@ -1,0 +1,95 @@
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(209, 57, 57);
+}
+.menu-icons {
+  display: none;
+}
+.fa-bars,
+.fa-times {
+  color: #fff;
+  font-size: 30px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.img-span-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo-png {
+  width: 50px;
+}
+
+/*  */
+.area {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+.ncc {
+  font-weight: 400;
+}
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 2400px) {
+  .logo-png {
+    display: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .NavbarItems {
+    z-index: 99;
+  }
+  .nav-menu {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(182, 181, 181);
+    box-shadow: 0 8px 32px 0 rgb(243, 224, 224);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 78px;
+    left: -110%;
+    align-items: stretch;
+    padding: 15px;
+    transition: all 0.7s ease-in-out;
+    z-index: 1;
+  }
+  .nav-menu.active {
+    left: 0%;
+  }
+
+  .nav-link {
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+  .nav-link:hover {
+    color: red;
+  }
+  .menu-icons {
+    display: block;
+  }
+  .logo-png {
+    display: block;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 318px) {
+  .nav-menu {
+    top: 115px;
+  }
+}
