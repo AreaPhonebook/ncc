@@ -26,7 +26,6 @@ const ParentHomePage = () => {
         </Link>
       </div>
       <Outlet></Outlet>
-      <Home></Home>
     </div>
   );
 };

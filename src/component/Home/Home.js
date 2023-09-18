@@ -1,22 +1,13 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
-      <h1>This is home</h1>
+      <Link className="createAnAccountButton">
+        <i class="fa-solid fa-user"></i>
+        <button>Create an Account</button>
+      </Link>
     </div>
   );
 };
