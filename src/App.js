@@ -58,7 +58,6 @@ function App() {
   // ]);
   return (
     <div className="App">
-      <NavBar></NavBar>
       <h1>This is app</h1>
     </div>
   );

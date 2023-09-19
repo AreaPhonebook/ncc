@@ -3,28 +3,35 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  // const root = document.getElementById("root");
-  // console.log(root);
+  let timeIcon = "fas fa-times";
+  let barsIcon = "fas fa-bars";
 
-  const parentHomePage = document.getElementsByTagName("ParentHomePage");
-  console.log(parentHomePage);
+  const homeUi = document.getElementById("parent-home-page-child-div");
+  console.log(homeUi);
 
   let [state, setState] = useState({ clicked: false });
   const handleClick = () => {
     setState({ clicked: !state.clicked });
-
-    //
-    console.log("background blur");
-    parentHomePage.style = "filter: blur(3px)";
-    //
   };
 
+  const handleBlur = () => {
+    console.log("btn clicked");
+    homeUi.style.filter = "blur(5px)";
+  };
+  const handleBlurClose = () => {
+    console.log("Blur end");
+    homeUi.style.filter = "blur(0px)";
+  };
   return (
     <nav className="NavbarItems">
       <div onClick={handleClick} className="menu-icons">
-        <i
-          className={state.clicked ? "fas fa-times" : "fas fa-bars burgerMenu"}
-        ></i>
+        {state.clicked ? (
+          <i onClick={handleBlurClose} className="fas fa-times"></i>
+        ) : (
+          <i onClick={handleBlur} className="fas fa-bars"></i>
+        )}
+
+        {/* <i className={state.clicked ? timeIcon : barsIcon}></i> */}
       </div>
       <ul className={state.clicked ? "nav-menu active" : "nav-menu"}>
         <li className="nav-link">

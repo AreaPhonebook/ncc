@@ -3,9 +3,9 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
-    <div>
+    <div className="homeUi" id="homeUi">
       <Link className="createAnAccountButton">
-        <i class="fa-solid fa-user"></i>
+        <i className="fa-solid fa-user"></i>
         <button>Create an Account</button>
       </Link>
       <div className="home-parent-cart-div">
@@ -23,18 +23,18 @@ const Home = () => {
               </h2>
               <div className="location-rating-div">
                 <span className="location-span">
-                  <i class="fa-solid fa-location-dot"></i>
+                  <i className="fa-solid fa-location-dot"></i>
                   <span>Location Address</span>
                 </span>
                 <span className="rating-span">
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                   <span>4.8 Rating</span>
                 </span>
               </div>
             </div>
 
             <div className="home-i-div">
-              <i class="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
             </div>
           </div>
         </div>
@@ -52,18 +52,18 @@ const Home = () => {
               </h2>
               <div className="location-rating-div">
                 <span className="location-span">
-                  <i class="fa-solid fa-location-dot"></i>
+                  <i className="fa-solid fa-location-dot"></i>
                   <span>Location Address</span>
                 </span>
                 <span className="rating-span">
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                   <span>4.8 Rating</span>
                 </span>
               </div>
             </div>
 
             <div className="home-i-div">
-              <i class="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
             </div>
           </div>
         </div>
@@ -80,18 +80,18 @@ const Home = () => {
               </h2>
               <div className="location-rating-div">
                 <span className="location-span">
-                  <i class="fa-solid fa-location-dot"></i>
+                  <i className="fa-solid fa-location-dot"></i>
                   <span>Location Address</span>
                 </span>
                 <span className="rating-span">
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                   <span>4.8 Rating</span>
                 </span>
               </div>
             </div>
 
             <div className="home-i-div">
-              <i class="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
             </div>
           </div>
         </div>
@@ -108,18 +108,18 @@ const Home = () => {
               </h2>
               <div className="location-rating-div">
                 <span className="location-span">
-                  <i class="fa-solid fa-location-dot"></i>
+                  <i className="fa-solid fa-location-dot"></i>
                   <span>Location Address</span>
                 </span>
                 <span className="rating-span">
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                   <span>4.8 Rating</span>
                 </span>
               </div>
             </div>
 
             <div className="home-i-div">
-              <i class="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
             </div>
           </div>
         </div>
